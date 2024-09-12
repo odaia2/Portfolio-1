@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = new FormData(projectForm);
     const newProject = {
       id: Date.now(), // Generate a unique ID using timestamp
-      name: formData.get('name'),
+      name: formData.get('title'),
       description: formData.get('description'),
       status: formData.get('status')
     };
